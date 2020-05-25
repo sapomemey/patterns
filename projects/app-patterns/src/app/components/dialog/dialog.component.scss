@@ -1,0 +1,25 @@
+:host {
+  .dialog-container-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .dialog-text {
+    width: 80%;
+  }
+
+  .dialog-container-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .mri {
+    margin-right: 12px;
+  }
+
+  .mli {
+    margin-left: 12px;
+  }
+}

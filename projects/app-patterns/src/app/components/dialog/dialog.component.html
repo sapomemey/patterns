@@ -1,0 +1,7 @@
+<section class="message -{{position}} dialog-container-{{position}}">
+  <i *ngIf="position === 'left'" class="nes-bcrikko mri"></i>
+  <div class="nes-balloon from-{{position}} dialog-text">
+    <ng-content></ng-content>
+  </div>
+  <i *ngIf="position === 'right'" class="nes-bcrikko mli"></i>
+</section>

@@ -1,0 +1,43 @@
+<pt-card title="Strategy">
+  <pt-dialog position="left">
+    <p>
+      Habilmente me doy cuenta de que entre el objeto Taxi y Bus existen cosas en común.
+      Dichas cosas las saco en una interface.
+    </p>
+  </pt-dialog>
+
+  <pt-code [typescript]="code1"></pt-code>
+
+  <pt-dialog position="right">
+    <p>
+      En este punto ya se comienza a cocinar la magia, creo dos clases Taxi y Bus estas
+      deben implementar la interface que se definio al inicio "Strategy". Porque son las cabeceras
+      que tienen en común.
+    </p>
+  </pt-dialog>
+
+  <pt-code [typescript]="code2"></pt-code>
+  <pt-code [typescript]="code3"></pt-code>
+
+  <pt-dialog position="left">
+    <p>
+      Por último se creará la clase context. Esta clase en su constructor recibirá una instancia 
+      del tipo Strategy. En este punto es cuando las cosas comienzan a tomar sentido. Es el implementador
+      el que tomará la decisión de cual estrategia usar, inculso podrá cambiarla en run time.
+    </p>
+  </pt-dialog>
+
+  <pt-code [typescript]="code4"></pt-code>
+
+  <pt-dialog position="right">
+    <p>
+      Usando la clase context. Se puede observar como es el implementador quien decide cual estrategia usar,
+      olvidate de los if, abre tu mente y tu corazón al patron Strategy. En este ejemplo una persona toma un Bus,
+      le dice a la clase context tomare un bus, Context le responde cuesta x y demora x. En medio del viaje
+      la persona se da cuenta que llegará tarde y cambia en run time de vehiculo y toma un taxi. Dandole un nuevo
+      precio y tiempo.
+    </p>
+  </pt-dialog>
+
+  <pt-code [typescript]="code5"></pt-code>
+</pt-card>

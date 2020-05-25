@@ -14,7 +14,11 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@pt/components/*": ["projects/app-patterns/src/app/components/*"],
+      "@pt/routes/*": ["projects/app-patterns/src/app/routes/*"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

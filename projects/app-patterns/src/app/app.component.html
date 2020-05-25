@@ -1,0 +1,20 @@
+<section>
+  <dialog class="nes-dialog" #dialog>
+    <form method="dialog">
+      <p class="title">Colaboradores</p>
+      <ul>
+        <li>Alvaro Ramírez Castillo</li>
+      </ul>
+      <button class="nes-btn is-primary btn-close-dialog">X</button>
+    </form>
+  </dialog>
+</section>
+
+<header>
+  <i class="nes-mario" (click)="showModal()"></i>
+  <h1 (click)="goToHome()">Design patterns</h1>
+  <i class="nes-octocat animate"></i>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

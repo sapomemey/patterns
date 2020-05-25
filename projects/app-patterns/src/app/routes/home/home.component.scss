@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .showcase {
+    margin: 19px;
+    width: 40%;
+    height: 40%;
+  }
+}
