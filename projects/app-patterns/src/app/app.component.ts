@@ -18,4 +18,8 @@ export class AppComponent {
   showModal() {
     this.dialogElement.nativeElement.showModal();
   }
+
+  goToGitHub() {
+    open('https://github.com/sapomemey/patterns', '_blank');
+  }
 }
