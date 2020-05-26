@@ -1,24 +1,40 @@
-<pt-card title="Strategy">
+<pt-card title="Adapter">
   <pt-dialog position="left">
     <p>
-      Imaginemos que estamos por machu picchu y nos encontramos un piedrá inka con algo escrito
-      y queremos descifrarlo. Gracias a Dios somos desarrolladores y como buenos programadores 
-      llevamos el mundo real a objetos. Entonces creamos dos clases la piedra inka y una clase cerebro
-      esta clase cerebro es el resultado que esperamos ver.
+      Imaginemos que estamos caminando por Machu Picchu y nos encontramos una piedra inka con un
+      extraño texto inscrito sobre ella. ¿cómo podríamos decifrar este misterioso texto?.
+      Afortunadamente recordamos que somos desarrolladores de software y como tales, siempre 
+      llevamos el mundo real a objetos. Entonces, ¡manos la obra!.
+      Empezamos creando una clase llamada StoneInka (piedra inka).
     </p>
   </pt-dialog>
 
   <pt-code [typescript]="code1"></pt-code>
-  <pt-code [typescript]="code2"></pt-code>
 
   <pt-dialog position="right">
     <p>
-      Por ultimo creo una clase lentes que hará el trabajo sucio, traducirá el texto en la piedra.
-      y mi cerebro dirá: ahora se leer lenguaje inka.
+      A continuación, creamos otra clase. Esta vez la llamaremos Brain (cerebro).
+    </p>
+  </pt-dialog>
+
+  <pt-code [typescript]="code2"></pt-code>
+
+  <pt-dialog position="left">
+    <p>
+      Finalmente, creamos una última clase llamada GlassesAdapter (lentes).
+      Esta clase hará el trabajo sucio, es decir que será la que traduzca
+      aquel misterioso texto inscrito en nuestra pieda inka.
     </p>
   </pt-dialog>
 
   <pt-code [typescript]="code3"></pt-code>
+  
+  <pt-dialog position="right">
+    <p>
+      cerebro: ¡ohhh! el misterioso mensaje es "felicidad"
+    </p>
+  </pt-dialog>
+
   <pt-code [typescript]="code4"></pt-code>
 
 </pt-card>

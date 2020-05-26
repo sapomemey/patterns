@@ -8,7 +8,7 @@ import { PlugAdaptee } from './example/plug-adaptee';
 export class AdapterComponent {
   code1 = `export class StoneInka {
     encrypted() {
-      return 'ollitsac zerimar oravla';
+      return 'cushicuna';
     }
 }`;
   code2 = `export class Brain {
