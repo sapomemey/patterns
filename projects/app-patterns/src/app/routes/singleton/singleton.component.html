@@ -1,0 +1,42 @@
+<pt-card title="Singleton">
+    <pt-dialog position="left">
+      <p>
+        Se identifica que hay algo que tiene en comun toda la aplicación son sus configuraciones, esta son compartidas
+        por todos los componentes y modulos que la conforman.
+      </p>
+    </pt-dialog>
+  
+    <pt-code [typescript]="code1"></pt-code>
+  
+    <pt-dialog position="right">
+      <p>
+        La primera caracteristica de este patron es que el constructor tiene el modificador de acceso  "privado"
+        es decir ninguna otra entidad puede instanciar esta clase a traves de sus constructor.
+      </p>
+    </pt-dialog>
+  
+    <pt-code [typescript]="code2"></pt-code>
+
+    <pt-dialog position="right">
+        <p>
+          La segunda caracteristica que define al patron singleton es declarar un metodo static que retornara la instancia de si misma,
+          Este sera el metodo con que utilizaran los modulos y componentes que necesiten acceder a la configuracion.
+        </p>
+      </pt-dialog>
+    <pt-code [typescript]="code3"></pt-code>
+  
+    <pt-dialog position="left">
+      <p>
+       Para obtener una instancia de la clase Config es necesario invocar el unico miembro publico que lo conforma el metodo "getInstance"
+      </p>
+    </pt-dialog>
+  
+    <pt-code [typescript]="code4"></pt-code>
+  
+    <pt-dialog position="right">
+      <p>
+        Usando el patron singleton garantizas de que solo exista una unica instancia de una clase.
+      </p>
+    </pt-dialog>
+  
+  </pt-card>
